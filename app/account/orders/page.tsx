@@ -17,7 +17,7 @@ const MOCK_USER_ORDERS: Order[] = [
     id: 'ORD-2024-001',
     userId: 'u1',
     items: [
-      { productId: 'p1', name: 'RTX 4080 Super 16GB', price: 42000, quantity: 1, image: '' },
+      { productId: 'p1', productName: 'RTX 4080 Super 16GB', productImage: '', price: 42000, quantity: 1, subtotal: 42000 },
     ],
     total: 42000,
     status: 'delivered',
@@ -28,8 +28,8 @@ const MOCK_USER_ORDERS: Order[] = [
     id: 'ORD-2024-003',
     userId: 'u1',
     items: [
-      { productId: 'p3', name: 'Corsair Vengeance 32GB DDR5', price: 4800, quantity: 2, image: '' },
-      { productId: 'p4', name: 'Logitech G Pro X Keyboard', price: 3200, quantity: 1, image: '' },
+      { productId: 'p3', productName: 'Corsair Vengeance 32GB DDR5', productImage: '', price: 4800, quantity: 2, subtotal: 9600 },
+      { productId: 'p4', productName: 'Logitech G Pro X Keyboard', productImage: '', price: 3200, quantity: 1, subtotal: 3200 },
     ],
     total: 12800,
     status: 'shipped',
@@ -40,7 +40,7 @@ const MOCK_USER_ORDERS: Order[] = [
     id: 'ORD-2024-005',
     userId: 'u1',
     items: [
-      { productId: 'p6', name: 'TP-Link AX6000 Wi-Fi 6 Router', price: 8900, quantity: 1, image: '' },
+      { productId: 'p6', productName: 'TP-Link AX6000 Wi-Fi 6 Router', productImage: '', price: 8900, quantity: 1, subtotal: 8900 },
     ],
     total: 8900,
     status: 'processing',
