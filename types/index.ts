@@ -19,12 +19,18 @@ export interface User {
 }
 
 // ── Address ────────────────────────────────────────────────
+// FIX: added name + phone to match runtime usage in orders & checkout
 export interface Address {
   id:          string
   label:       string
+
+  name:        string      // ✅ added (fix for build error)
+  phone:       string      // ✅ added (fix for build error)
+
   street:      string
   city:        string
   governorate: string
+
   postalCode?: string
   isDefault:   boolean
 }
